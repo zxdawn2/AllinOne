@@ -1,8 +1,8 @@
 
 {{ define "main" }}
+
   <!-- Main layout -->
-  <main class="post-main-wrapper">
-    
+  <main class="container">
     <!-- Grid row -->
     <div class="row">
 
@@ -11,7 +11,7 @@
       {{ if .Params.toc }}
       <div class="col-md-10">
       {{ else }}
-      <div class="container pr-5">
+      <div class="container">
       {{ end }}
 
         <!-- Spied element -->
@@ -67,7 +67,7 @@
           </div>
 
           <!-- /.Prev & Next -->
-
+        {{ partial "staticman/comments" . }}
         </div>
         <!-- /.Spied element -->
 
@@ -78,7 +78,6 @@
 
     </div>
     <!-- /.Grid row -->
-
 
   </main>
   <!-- /.Main layout -->
